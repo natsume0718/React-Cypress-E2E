@@ -1,6 +1,7 @@
 import React from 'react';
 import Board from './board';
 import calculateWinner from '../util/calculateWinner';
+import { Piece } from './Piece';
 
 export default class Game extends React.Component {
   constructor(props) {
@@ -23,7 +24,7 @@ export default class Game extends React.Component {
     if (calculateWinner(squares) || squares[i]) {
       return;
     }
-    squares[i] = this.state.isFirstPlayer ? "X" : "O";
+    squares[i] = this.state.isFirstPlayer ? Piece.cross : Piece.round;
     this.setState({
       history: history.concat([
         {
@@ -62,7 +63,7 @@ export default class Game extends React.Component {
     if (winner) {
       status = 'Winner: ' + winner;
     } else {
-      status = 'Next player: ' + (this.state.isFirstPlayer ? 'X' : '◯');
+      status = 'Next player: ' + (this.state.isFirstPlayer ? Piece.cross : Piece.round);
     }
     return (
       <div className="game">
