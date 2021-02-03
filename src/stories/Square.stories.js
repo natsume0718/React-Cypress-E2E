@@ -2,6 +2,7 @@ import React from 'react';
 
 import Square from '../components/squre';
 import '../index.css';
+import { Piece } from '../components/Piece';
 
 
 export default {
@@ -18,12 +19,12 @@ Default.args = {
 
 export const Round = Template.bind({});
 Round.args = {
-  value: '◯',
+  value: Piece.round,
 };
 
 export const Cross = Template.bind({});
 Cross.args = {
-  value: 'X',
+  value: Piece.cross,
 };
 
 export const Triangle = Template.bind({});
