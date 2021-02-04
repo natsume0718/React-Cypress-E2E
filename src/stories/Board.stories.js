@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Board from '../components/board';
-import '../index.css';
 import { Piece } from '../components/Piece';
 
 export default {

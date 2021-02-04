@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Square from '../components/squre';
-import '../index.css';
 import { Piece } from '../components/Piece';
 
 

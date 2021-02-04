@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Game from '../components/game';
-import '../index.css';
 
 const Template = (args) => <Game {...args} />;
 
