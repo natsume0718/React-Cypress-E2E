@@ -1,6 +1,44 @@
-# Getting Started with Create React App
+# About
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React Tutorial + StoryBook
+https://ja.reactjs.org/tutorial/tutorial.html  
+https://storybook.js.org/
+
+## Merit
+
+ - アプリケーションから独立した環境でUIコンポーネントを構築・管理しUIコンポーネント自体を共有できるので、アプリケーション側はImportするだけでUIを実装できる
+ - UI コンポーネントをカタログから探せるので 再利用が捗る
+ - デザイナーとの共同作業がしやすくなる
+
+## Demerit
+
+ - 追加されたデザインパーツは都度 Storybookへの反映がいるため工数が増える
+ - デザイナーが扱えるように環境整備が必要
+ - 機能が多く学習コストがかかる
+
+## Quiz
+
+### StoryBookで使用できるmdx構文はどのような特徴があるでしょうか
+
+<details>
+<summary>解答</summary>
+Markdownドキュメントとストーリーを1つのファイルにキャプチャするために使用します。
+</details>
+
+### StoryBookで環境変数を使用したい場合はどのようにすればよいでしょうか
+
+<details>
+<summary>解答</summary>
+.envにSTORYBOOK_接頭辞が付いた変数で指定する  
+または、実行時にコマンドから渡す
+</details>
+
+### StoryBookで機能を拡張したい場合何を用いるでしょうか
+
+<details>
+<summary>解答</summary>
+Storybookコアチームによって開発された「公式」アドオンだけでなく、多くのサードパーティアドオンがあります。
+</details>
 
 ## Available Scripts
 
