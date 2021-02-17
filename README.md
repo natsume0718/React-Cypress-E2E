@@ -3,6 +3,7 @@
 React Tutorial + StoryBook + Storyshot
 https://ja.reactjs.org/tutorial/tutorial.html  
 https://storybook.js.org/
+https://storybook.js.org/docs/react/workflows/snapshot-testing
 
 ## スナップショットテストとは
 スナップショットのテストはUI が予期せず変更されていないかを確かめるのに用いる
@@ -14,7 +15,7 @@ https://storybook.js.org/
  -
 
 ## スナップショットテストでは防止できない不具合
- - テスト実行タイミングに依存する値をの場合、期待通りにならない
+ - テスト実行タイミングに依存する値の場合、期待通りにならない
  - 
  - 
 

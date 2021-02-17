@@ -23,7 +23,8 @@ allRound.args = {
 
 export const allTriangle = Template.bind({});
 allTriangle.args = {
-  squares: Array(9).fill('△'),
+  // squares: Array(9).fill('△'),
+  squares: ['丁', '半', '丁', '半', '丁', '半', '丁', '半', '丁'],
   onClick: () => {}
 };
 

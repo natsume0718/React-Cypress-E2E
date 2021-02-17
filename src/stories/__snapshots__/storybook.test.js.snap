@@ -151,41 +151,19 @@ exports[`Storyshots Board All Triangle 1`] = `
       className="square"
       onClick={[Function]}
     >
-      △
+      丁
     </button>
     <button
       className="square"
       onClick={[Function]}
     >
-      △
+      半
     </button>
     <button
       className="square"
       onClick={[Function]}
     >
-      △
-    </button>
-  </div>
-  <div
-    className="board-row"
-  >
-    <button
-      className="square"
-      onClick={[Function]}
-    >
-      △
-    </button>
-    <button
-      className="square"
-      onClick={[Function]}
-    >
-      △
-    </button>
-    <button
-      className="square"
-      onClick={[Function]}
-    >
-      △
+      丁
     </button>
   </div>
   <div
@@ -195,19 +173,41 @@ exports[`Storyshots Board All Triangle 1`] = `
       className="square"
       onClick={[Function]}
     >
-      △
+      半
     </button>
     <button
       className="square"
       onClick={[Function]}
     >
-      △
+      丁
     </button>
     <button
       className="square"
       onClick={[Function]}
     >
-      △
+      半
+    </button>
+  </div>
+  <div
+    className="board-row"
+  >
+    <button
+      className="square"
+      onClick={[Function]}
+    >
+      丁
+    </button>
+    <button
+      className="square"
+      onClick={[Function]}
+    >
+      半
+    </button>
+    <button
+      className="square"
+      onClick={[Function]}
+    >
+      丁
     </button>
   </div>
 </div>
