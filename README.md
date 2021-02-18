@@ -16,7 +16,7 @@ https://storybook.js.org/docs/react/workflows/snapshot-testing
 
 ## スナップショットテストでは防止できない不具合
  - テスト実行タイミングに依存する値の場合、期待通りにならない
- - 
+ - 差分によって表示がどう変化するかわからない
  - 
 
 ## Quiz
