@@ -21,13 +21,6 @@ allRound.args = {
   onClick: () => {}
 };
 
-export const allTriangle = Template.bind({});
-allTriangle.args = {
-  // squares: Array(9).fill('△'),
-  squares: ['丁', '半', '丁', '半', '丁', '半', '丁', '半', '丁'],
-  onClick: () => {}
-};
-
 export const allCross = Template.bind({});
 allCross.args = {
   squares: Array(9).fill(Piece.cross),
