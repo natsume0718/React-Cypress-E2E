@@ -9,6 +9,11 @@ https://github.com/storybookjs/storybook/tree/master/addons/storyshots/storyshot
 ## ビジュアルリグレッションテストとは
 ビジュアルリグレッションテストは、CSSやコードを変更した後に、変更前と同じ表示・実行結果になるかを検証するテストの一種です。 スクリーンショットを撮影することで、前後で差分が出ていないか検証します。
 
+## ビジュアルリグレッションテストとスナップショットテストを比較した際のメリット・デメリット
+- メリット
+    - 画像で比較できるため、変更前後がわかりやすい
+- デメリット
+    - ビルドが大変
 ## Available Scripts
 
 In the project directory, you can run:
