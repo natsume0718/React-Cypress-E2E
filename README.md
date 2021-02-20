@@ -1,48 +1,13 @@
 # About
 
-React Tutorial + StoryBook + Storyshot
+React Tutorial + StoryBook + Storyshot + Puppeteer
 https://ja.reactjs.org/tutorial/tutorial.html  
 https://storybook.js.org/
 https://storybook.js.org/docs/react/workflows/snapshot-testing
+https://github.com/storybookjs/storybook/tree/master/addons/storyshots/storyshots-puppeteer
 
-## スナップショットテストとは
-スナップショットのテストはUI が予期せず変更されていないかを確かめるのに用いる
-現在の画面のスナップショット（キャプチャみたいなもの）を保存しておいて、テストの時にそのスナップショットと今の画面と比較して変更点を出力してくれる。
-
-## スナップショットテストを用いることで、どのような不具合が防止できるか
- - 修正により、既存の画面に影響が出ないか確認できる
- -
- -
-
-## スナップショットテストでは防止できない不具合
- - テスト実行タイミングに依存する値の場合、期待通りにならない
- - 差分によって表示がどう変化するかわからない
- - 
-
-## Quiz
-
-### スナップショットファイルはコミットする必要があるか
-
-<details>
-<summary>解答</summary>
-必要ある。
-スナップショットはテストの一部とみなされるべきで、他の開発する人にも必要になるため
-</details>
-
-### スナップショットテストで単体テストを代替できますか
-
-<details>
-<summary>解答</summary>
-いいえ
-スナップショットテストのねらいは既存の単体テストを代替することではなく、追加のテスト結果を提供してテストにおける作業負担を減らすことです
-</details>
-
-### コードカバレッジはスナップショットテストでも機能しますか？
-
-<details>
-<summary>解答</summary>
-はい
-</details>
+## ビジュアルリグレッションテストとは
+ビジュアルリグレッションテストは、CSSやコードを変更した後に、変更前と同じ表示・実行結果になるかを検証するテストの一種です。 スクリーンショットを撮影することで、前後で差分が出ていないか検証します。
 
 ## Available Scripts
 

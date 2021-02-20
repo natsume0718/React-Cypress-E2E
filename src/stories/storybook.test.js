@@ -1,2 +1,10 @@
+import path from 'path';
 import initStoryshots from '@storybook/addon-storyshots';
-initStoryshots();
+import { imageSnapshot } from '@storybook/addon-storyshots-puppeteer';
+
+initStoryshots({
+  suite: 'Puppeteer storyshots',
+  test: imageSnapshot({
+    storybookUrl: `file://${path.resolve(__dirname, '../..', 'storybook-static')}`,
+  })
+});
