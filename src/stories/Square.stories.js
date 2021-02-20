@@ -4,10 +4,11 @@ import Square from '../components/squre';
 import { Piece } from '../components/Piece';
 
 
-export default {
+let component = {
   title: 'Square',
   component: Square,
 };
+export default component;
 
 const Template = (args) => <Square {...args} />;
 

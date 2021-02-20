@@ -3,10 +3,12 @@ import React from 'react';
 import Board from '../components/board';
 import { Piece } from '../components/Piece';
 
-export default {
+let component = {
   title: 'Board',
   component: Board,
 };
+
+export default component;
 
 const Template = (args) => <Board {...args} />;
 
