@@ -14,17 +14,17 @@ const Template = (args) => <Board {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  squares: Array(11).fill(null),
+  squares: Array(9).fill(null),
   onClick: () => {}
 };
 export const allRound = Template.bind({});
 allRound.args = {
-  squares: Array(11).fill(Piece.round),
+  squares: Array(9).fill(Piece.round),
   onClick: () => {}
 };
 
 export const allCross = Template.bind({});
 allCross.args = {
-  squares: Array(11).fill(Piece.cross),
+  squares: Array(9).fill(Piece.cross),
   onClick: () => {}
 };
