@@ -63,6 +63,9 @@ export default class Game extends React.Component {
     if (winner) {
       status = 'Winner: ' + winner;
     }
+    if (!current.squares.includes(null) && !winner) {
+      status = 'Draw !'
+    }
 
     return (
       <div className="game">
