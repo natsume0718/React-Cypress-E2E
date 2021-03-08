@@ -1,19 +1,72 @@
 # About
 
-React Tutorial + StoryBook + Storyshot + Puppeteer
+React Tutorial + StoryBook + Storyshot + Puppeteer + Cypress  
 https://ja.reactjs.org/tutorial/tutorial.html  
 https://storybook.js.org/
 https://storybook.js.org/docs/react/workflows/snapshot-testing
 https://github.com/storybookjs/storybook/tree/master/addons/storyshots/storyshots-puppeteer
+https://www.cypress.io/
 
-## ビジュアルリグレッションテストとは
-ビジュアルリグレッションテストは、CSSやコードを変更した後に、変更前と同じ表示・実行結果になるかを検証するテストの一種です。 スクリーンショットを撮影することで、前後で差分が出ていないか検証します。
+## E2E テストのメリットとデメリット
 
-## ビジュアルリグレッションテストとスナップショットテストを比較した際のメリット・デメリット
 - メリット
-    - 画像で比較できるため、変更前後がわかりやすい
+
+  - 実際のユーザーが行う動作に近いテストができる
+    - アプリケーション(フロント・バック・インフラ)が動作することの確認ができる
+  - ブラウザに表示されている文言などもチェックすることができる
+
 - デメリット
-    - ビルドが大変
+  - 遅い
+  - 形骸化しやすい
+
+## どのような基準で選ぶと良いでしょうか？
+
+採用可能なら組み合わせて採用する
+
+単体>統合>E2E
+単体は単体はロジックを担保できるので優先する
+統合は単体でテストできない範囲（フロントとバックのやりとりや、複数のユニットのやりとり）をカバーする  
+https://kentcdodds.com/blog/unit-vs-integration-vs-e2e-tests
+
+## クイズ
+
+### Cypress でテストが多く時間がかかっている場合、高速化するには何を検討すればよいでしょうか
+<details> 
+<summary>解答</summary>
+並列化  
+https://docs.cypress.io/guides/guides/parallelization.html#Overview
+
+</details>
+
+### Cypress で環境変数の使い方を3つあげてください
+<details>
+<summary>解答</summary>
+1. cypress.jsonにenvキーを追加
+
+```javascript
+{
+  "projectId": "128076ed-9868-4e98-9cef-98dd8b705d75",
+  "env": {
+    "login_url": "/login",
+    "products_url": "/products",
+  }
+}
+```
+
+2. cypress.env.jsonを作成する
+
+```javascript
+{
+    "login_url": "/login",
+    "products_url": "/products"
+}
+```
+
+3. コマンドラインから追加
+https://docs.cypress.io/guides/guides/environment-variables.html#Setting
+
+</details>
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -80,3 +133,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+```
+
+```
