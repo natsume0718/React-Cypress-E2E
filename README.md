@@ -67,6 +67,13 @@ https://docs.cypress.io/guides/guides/environment-variables.html#Setting
 
 </details>
 
+### Cypress で デフォルトのセレクタの優先度で一番高いのは何でしょうか
+
+<details>
+<summary>解答</summary>
+data-cy
+</details>
+
 ## Available Scripts
 
 In the project directory, you can run:
