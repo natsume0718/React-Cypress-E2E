@@ -31,6 +31,7 @@ https://kentcdodds.com/blog/unit-vs-integration-vs-e2e-tests
 ## クイズ
 
 ### Cypress でテストが多く時間がかかっている場合、高速化するには何を検討すればよいでしょうか
+
 <details> 
 <summary>解答</summary>
 並列化  
@@ -38,7 +39,8 @@ https://docs.cypress.io/guides/guides/parallelization.html#Overview
 
 </details>
 
-### Cypress で環境変数の使い方を3つあげてください
+### Cypress で環境変数の使い方を 3 つあげてください
+
 <details>
 <summary>解答</summary>
 1. cypress.jsonにenvキーを追加
@@ -53,7 +55,7 @@ https://docs.cypress.io/guides/guides/parallelization.html#Overview
 }
 ```
 
-2. cypress.env.jsonを作成する
+2. cypress.env.json を作成する
 
 ```javascript
 {
@@ -63,7 +65,7 @@ https://docs.cypress.io/guides/guides/parallelization.html#Overview
 ```
 
 3. コマンドラインから追加
-https://docs.cypress.io/guides/guides/environment-variables.html#Setting
+   https://docs.cypress.io/guides/guides/environment-variables.html#Setting
 
 </details>
 
