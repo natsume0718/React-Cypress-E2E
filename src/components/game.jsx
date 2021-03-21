@@ -9,7 +9,7 @@ export default class Game extends React.Component {
     this.state = {
       history: [
         {
-          squares: Array(11).fill(null)
+          squares: Array(9).fill(null)
         }
       ],
       stepNumber: 0,
@@ -59,12 +59,14 @@ export default class Game extends React.Component {
       );
     });
 
-    let status;
+    let status = 'Next player: ' + (this.state.isFirstPlayer ? Piece.cross : Piece.round);
     if (winner) {
       status = 'Winner: ' + winner;
-    } else {
-      status = 'Next player: ' + (this.state.isFirstPlayer ? Piece.cross : Piece.round);
     }
+    if (!current.squares.includes(null) && !winner) {
+      status = 'Draw !'
+    }
+
     return (
       <div className="game">
         <div className="game-board">

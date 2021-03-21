@@ -12,7 +12,8 @@
     "test": "build-storybook -s public && react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "cypress:open": "cypress open"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +46,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "babel-loader": "8.1.0",
+    "cypress": "^6.6.0",
     "puppeteer": "^7.1.0"
   }
 }
