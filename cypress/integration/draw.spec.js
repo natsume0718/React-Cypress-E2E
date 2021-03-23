@@ -17,5 +17,6 @@ describe('draw', function() {
     cy.get('[data-cy=3]').click()
     cy.get('[data-cy=4]').click()
     cy.get('[data-cy=5]').click()
+    cy.get('[data-e2e="status"]').should('have.text', 'Draw !');
   })
 })

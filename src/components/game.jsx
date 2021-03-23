@@ -76,7 +76,7 @@ export default class Game extends React.Component {
           />
         </div>
         <div className="game-info">
-          <div>{status}</div>
+          <div data-cy="status">{status}</div>
           <ol>{moves}</ol>
         </div>
       </div>
